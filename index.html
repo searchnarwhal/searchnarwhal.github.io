@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SearchNarwhal Browser Engine</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #001f3f; /* dark blue background */
+      margin: 0;
+      padding: 0;
+      color: #f0f0f0;
+    }
+
+    .nobbar {
+      background-color: #001f3f;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #0074D9;
+    }
+
+    .nobbar a {
+      color: #7FDBFF;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    .nobbar a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: #003366;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+    h1, h2 {
+      color: #7FDBFF;
+    }
+
+    ol li {
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    code {
+      background-color: #002244;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #01FF70;
+    }
+
+    a {
+      color: #39CCCC;
+    }
+
+    a:hover {
+      color: #7FDBFF;
+    }
+
+    .credit {
+      font-style: italic;
+      text-align: center;
+      margin-top: 20px;
+      color: #FFDC00;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nobbar">
+    <div><strong>SearchNarwhal</strong></div>
+    <div>
+      <a href="#docs">Documentation</a>
+      <a href="https://github.com/searchnarwhal/searchnarwhal" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Welcome to SearchNarwhal</h1>
+    <p><strong>SearchNarwhal</strong> is a free, open-source browser engine written in Python. It uses <code>TkinterWeb</code> and does not rely on Chromium or Gecko — it is a new browser engine built for simplicity and speed.</p>
+
+    <h2 id="docs">Documentation</h2>
+    <ol>
+      <li><strong>Fork or clone the repo:</strong> Use <code>git clone</code> or download the ZIP and open it in Visual Studio.</li>
+      <li><strong>Don't install from pip:</strong> It is not recommended to install from pip due to potential errors. Always use the source.</li>
+      <li><strong>Download the SDK:</strong> Get it from 
+        <a href="https://github.com/searchnarwhal/searchnarwhal/releases/download/1.0/SNSDK.msi" target="_blank">this link</a>.</li>
+      <li><strong>Study the example:</strong> Refer to <code>example_browser.py</code> for guidance. Mistakes are common without it.</li>
+      <li><strong>Build your browser:</strong> Use the structure of <code>example_browser.py</code> and add your own features.</li>
+      <li><strong>Compile with PyInstaller:</strong> Use <code>pyinstaller your_browser.py</code>.</li>
+      <li><strong>Move directories:</strong> After compiling, move the <code>searchnarwhal/</code> folder into the <code>dist/</code> folder to prevent crashes.</li>
+      <li><strong>Create an installer:</strong> Recommended tool is NSIS, though Inno Setup or others work too.</li>
+      <li><strong>Publish or keep private:</strong> Upload your browser to GitHub or keep it proprietary.</li>
+      <li><strong>You're done!</strong> Enjoy your own custom browser built with SearchNarwhal.</li>
+    </ol>
+
+    <p>Need help? Visit our <a href="https://github.com/searchnarwhal/searchnarwhal" target="_blank">GitHub page</a>.</p>
+
+    <div class="credit">
+      SearchNarwhal was brought to you by <strong>Zohan Haque</strong>.
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 SearchNarwhal. All rights reserved.
+  </div>
+
+</body>
+</html>
